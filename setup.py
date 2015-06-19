@@ -8,4 +8,9 @@ setuptools.setup(
     py_modules=['dump2json'],
     install_requires=['pytest'],
     test_suite='test',
+    entry_points = {
+        'pytest11': [
+            'pytest-dump2json = dump2json',
+        ]
+    },
 )
